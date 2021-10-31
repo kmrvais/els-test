@@ -1,0 +1,17 @@
+.container
+  max-width: $wp1
+  margin-left: auto
+  margin-right: auto
+  padding-left: 12px
+  padding-right: 12px
+
++mq(tablet)
+  .container
+    padding-left: 24px
+    padding-right: 24px
+    max-width: $wp2
+
++mq(desktop)
+  .container
+    max-width: none
+    width: $wp3

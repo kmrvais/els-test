@@ -1,0 +1,101 @@
+@import "../feedback-form-checkbox/feedback-form-checkbox"
+
+.feedback-form
+  margin-top: 9px
+
+.feedback-form__floating
+  margin-top: 15px
+  position: relative
+
+  &:first-child
+    margin-top: 0
+
+.feedback-form__floating_filled
+
+  .feedback-form__label
+    top: 2px
+
+.feedback-form__floating_invalid
+
+  .feedback-form__control
+    border-bottom-color: $red
+
+  .feedback-form__label
+    color: $red
+
+  .feedback-form__error
+    display: block
+
+.feedback-form__control
+  background-color: transparent
+  border-bottom: 1px solid $main-color
+  border-top-width: 0
+  border-left-width: 0
+  border-right-width: 0
+  color: $main-color
+  font-size: 16px
+  line-height: 18px
+  font-family: $default-font
+  height: 56px
+  padding: 26px 0 11px
+  width: 100%
+
+  &:focus
+    outline: none
+
+    & + .feedback-form__label
+      top: 2px
+
+.feedback-form__label
+  font-size: 16px
+  line-height: 18px
+  color: #676B78
+  position: absolute
+  top: 27px
+  transition: $default-transition
+  left: 0
+
+.feedback-form__mark
+  color: $red
+
+.feedback-form__submit-wrapper
+  margin-top: 33px
+
+.feedback-form__submit
+  background-color: $red
+  border: 1px solid $red
+  border-radius: 3px
+  cursor: pointer
+  color: #ffffff
+  font-size: 16px
+  line-height: 18px
+  text-align: center
+  transition: $default-transition
+  padding: 20px 31px
+
+  &:hover
+    background-color: $dark-red
+    border-color: $dark-red
+
+  &:active
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+  &:disabled
+    background-color: #676B78
+    border-color: #676B78
+
+.feedback-form__note
+  font-size: 12px
+  line-height: 14px
+  color: #333333
+  margin-top: 10px
+
+.feedback-form__error
+  display: none
+  font-size: 12px
+  line-height: 14px
+  color: $red
+  margin-top: 8px
+
+.feedback-form__privacy-policy
+  margin-top: 36px

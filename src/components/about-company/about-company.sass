@@ -1,0 +1,45 @@
+.about-company
+  padding: 70px 0 80px
+  overflow: hidden
+
+.about-company__title
+  font-weight: 700
+  font-size: 36px
+  line-height: 41px
+  color: #2F3441
+  margin: 0
+
+.about-company__content
+  align-items: end
+  display: flex
+  margin: 65px 0 0
+
+.about-company__img
+  flex-shrink: 0
+  flex-grow: 0
+
+.about-company__text
+  font-size: 18px
+  line-height: 22px
+  margin: 0 0 0 60px
+
++mq(tablet, max)
+
+  .about-company__content
+    flex-direction: column
+    margin-top: 20px
+
+  .about-company__text
+    margin: 0
+    order: 1
+
+  .about-company__img
+    margin-top: 15px
+    order: 2
+
++mq(desktop, max)
+
+  .about-company__content
+    align-items: center
+
+

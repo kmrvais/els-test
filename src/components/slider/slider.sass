@@ -1,0 +1,97 @@
+.slider
+  margin-top: 60px
+  overflow: visible
+
+.slider__slide
+  background: #F4F7FA
+  border-radius: 5px
+  height: 129px
+  padding: 24px
+  position: relative
+  overflow: hidden
+  width: 360px
+
+.slider__slide-number
+  font-weight: 700
+  font-size: 36px
+  line-height: 28px
+  position: relative
+  color: #606981
+  z-index: 2
+
+.slider__slide-text
+  font-size: 20px
+  line-height: 24px
+  color: #606981
+  position: relative
+  margin-top: 8px
+  z-index: 2
+
+.swiper-slide__icon
+  position: absolute
+  z-index: 1
+
+.slider__navigation
+  display: flex
+  justify-content: center
+  margin-top: 24px
+
+.slider__button
+  align-items: center
+  background-color: transparent
+  border: 2px solid #296093
+  border-radius: 50%
+  cursor: pointer
+  display: flex
+  justify-content: center
+  margin: 0 30px
+  height: 30px
+  width: 30px
+
+  svg
+    flex-grow: 0
+    flex-shrink: 0
+
+.slider__button_prev
+  svg
+    margin-left: -2px
+
+.slider__button_next
+  svg
+    margin-right: -2px
+
+.slider__button.swiper-button-disabled
+  cursor: auto
+
+.slider__pagination
+  display: flex
+  align-items: center
+
+  .swiper-pagination-bullet
+    background: #959595
+    border-radius: 50%
+    cursor: pointer
+    display: block
+    margin: 0 6px
+    height: 8px
+    width: 8px
+
+  .swiper-pagination-bullet-active
+    background-color: #296093
+    cursor: auto
+    height: 11px
+    width: 11px
+
++mq(tablet, max)
+
+  .slider
+    margin-top: 50px
+
+  .slider__slide
+    width: 280px
+
++mq(desktop, max)
+
+  .slider__navigation
+    display: none
+
